@@ -7,7 +7,7 @@ public class ListsAndLoops {
      * @return Result list
      */
     public static List<Integer> getListOneToTen(){
-        return List.of(1,2,3,4,5,6,7,8,9,10);
+        return new ArrayList<>();
     }
 
     /**
@@ -15,13 +15,7 @@ public class ListsAndLoops {
      * @return Result list
      */
     public static List<Integer> getEverySecondNumberFrom100to0(){
-        List<Integer> result = new ArrayList<>();
-
-        for (int i = 100; i >= 0; i = i-2){
-            result.add(i);
-        }
-
-        return result;
+        return new ArrayList<>();
     }
 
     /**
@@ -30,12 +24,7 @@ public class ListsAndLoops {
      * @return String
      */
     public static String getXString(int length){
-        String result = "";
-        for (int i = 0; i < length; i++){
-            result = result + "X";
-        }
-
-        return result;
+        return "";
     }
 
     /**
@@ -45,7 +34,7 @@ public class ListsAndLoops {
      * @return String that contians initials
      */
     public static String getInitials(String firstName, String lastName){
-        return firstName.substring(0,1) + lastName.substring(0,1);
+        return "";
     }
 
     /**
@@ -54,13 +43,7 @@ public class ListsAndLoops {
      * @return the reverted String
      */
     public static String revertString(String str){
-        String result = "";
-
-        for (int i = str.length(); i > 0; i--){
-            result += str.substring(i-1, i);
-        }
-
-        return result;
+        return "";
     }
 
     /**
@@ -71,18 +54,6 @@ public class ListsAndLoops {
      * @return
      */
     public static String getStarSquare(int size){
-        if (size == 1){
-            return "*";
-        }
-
-        String result = "";
-        for (int i = 0; i < size; i++){
-            for (int j = 0; j < size; j++){
-                result += "*";
-            }
-            result += "\n";
-        }
-
-        return result;
+        return "";
     }
 }
