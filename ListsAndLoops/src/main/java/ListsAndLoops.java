@@ -7,7 +7,7 @@ public class ListsAndLoops {
      * @return Result list
      */
     public static List<Integer> getListOneToTen(){
-        return new ArrayList<>();
+        return List.of(1,2,3,4,5,6,7,8,9,10);
     }
 
     /**
@@ -54,6 +54,19 @@ public class ListsAndLoops {
      * @return
      */
     public static String getStarSquare(int size){
+        return "*";
+    }
+
+    /**
+     * Returns a word pyramid for the give word. For Example Test -> T
+     *                                                               Te
+     *                                                               Tes
+     *                                                               Test
+     *
+     * @param word String given word
+     * @return String that contains the wordpyramid
+     */
+    public static String getWordPyramid(String word){
         return "";
     }
 }

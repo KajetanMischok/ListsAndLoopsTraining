@@ -75,4 +75,48 @@ public class ListAndLoopsTest {
         Assertions.assertEquals(tenXTen, ListsAndLoops.getStarSquare(10));
         Assertions.assertEquals(twentyXtwenty, ListsAndLoops.getStarSquare(20));
     }
+
+    @Test
+    void testGetWordPyramid(){
+        Assertions.assertEquals("a\n", ListsAndLoops.getWordPyramid("a"));
+        String longString = "H\n" +
+                "Ha\n" +
+                "Hal\n" +
+                "Hall\n" +
+                "Hallo\n" +
+                "Hallo \n" +
+                "Hallo i\n" +
+                "Hallo ic\n" +
+                "Hallo ich\n" +
+                "Hallo ich \n" +
+                "Hallo ich b\n" +
+                "Hallo ich bi\n" +
+                "Hallo ich bin\n" +
+                "Hallo ich bin \n" +
+                "Hallo ich bin s\n" +
+                "Hallo ich bin sc\n" +
+                "Hallo ich bin sch\n" +
+                "Hallo ich bin scho\n" +
+                "Hallo ich bin schon\n" +
+                "Hallo ich bin schon \n" +
+                "Hallo ich bin schon e\n" +
+                "Hallo ich bin schon ei\n" +
+                "Hallo ich bin schon ein\n" +
+                "Hallo ich bin schon ein \n" +
+                "Hallo ich bin schon ein l\n" +
+                "Hallo ich bin schon ein la\n" +
+                "Hallo ich bin schon ein lan\n" +
+                "Hallo ich bin schon ein lang\n" +
+                "Hallo ich bin schon ein lange\n" +
+                "Hallo ich bin schon ein langer\n" +
+                "Hallo ich bin schon ein langer \n" +
+                "Hallo ich bin schon ein langer S\n" +
+                "Hallo ich bin schon ein langer St\n" +
+                "Hallo ich bin schon ein langer Str\n" +
+                "Hallo ich bin schon ein langer Stri\n" +
+                "Hallo ich bin schon ein langer Strin\n" +
+                "Hallo ich bin schon ein langer String\n" +
+                "Hallo ich bin schon ein langer String.\n";
+        Assertions.assertEquals(longString, ListsAndLoops.getWordPyramid("Hallo ich bin schon ein langer String."));
+    }
 }
